@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+body{
+    background: white;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    max-width: 100vw;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.container .navbar{
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+    height: 70px;
+    padding: 0 5rem;
+}
+
+.navbar .logo{
+margin-right: 2rem;
+}
+
+.navbar .navbar_container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_container ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar_container ul li{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.navbar_container .end {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_container .end .toggle{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 40px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.navbar_container .end .toggle span{
+    height: 5px;
+    width: 100%;
+    background: #333;
+    border-radius: 5px;
+}
+
+.navbar_container .end .toggle span:nth-child(2){
+    width: 90%;
+}
+
+.navbar_container .end .toggle span:nth-child(4){
+    width: 80%;
+}
+
+.container .body_container{
+    height: calc(100vh - 70px);
+    display: flex;
+   
+}
+
+
+.body_container .left{
+    height: 100%;
+    width: 40%;
+    min-width: 50%;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-left: 5rem;
+}
+
+.body_container .left h1{
+    font-size: 3rem;
+    
+}
+
+.body_container .left button {
+    background: #333;
+    padding: 10px 1rem;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.body_container .right{
+    width: 68%;
+    height: 100%;
+    padding-right: 5rem;
+    padding-top: 3rem;
+}
+
+.body_container .right .biggest{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body_container .right .bigger{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.body_container .right .big{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .girl {
+    position: absolute;
+    right: 4rem;
+    top: 5rem;
+    width: 60%;
+}
+
+
+.container .text{
+    position: absolute;
+    top: 15rem;
+    right: 10rem;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 3px;
+}
